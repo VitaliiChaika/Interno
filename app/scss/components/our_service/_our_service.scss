@@ -1,0 +1,74 @@
+.our_service {
+  padding: 175px 0;
+
+  @media (max-width: 1200px) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: 980px) {
+    padding: 50px 0;
+  }
+}
+
+.our-service_descr {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 991px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.our-service_item {
+  max-width: 400px;
+  text-align: center;
+
+  h3 {
+    color: #292F36;
+  }
+
+  p {
+    width: 317px;
+    text-align: center;
+    margin-top: 17px;
+  }
+
+  span {
+    color: #4D5053;
+  }
+
+  @media (max-width: 980px) {
+    &:last-child {
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 663px) {
+    margin-top: 30px;
+    &:last-child {
+      margin-top: 30px;
+    }
+    a {
+      margin-top: 15px;
+    }
+  }
+}
+
+
+.our-service_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+
+  span {
+    margin-right: 20px;
+  }
+
+}
+

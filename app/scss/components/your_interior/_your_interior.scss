@@ -1,0 +1,46 @@
+.your_interior {
+  padding: 188px 260px ;
+  background: url("../img/Main_bg (1).jpg");
+  background-size: cover;
+  border-radius: 0 0 0 290px;
+
+  @media (max-width: 1200px) {
+    padding: 93px 100px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 40px;
+    border-radius: 0 0 0 160px;
+  }
+}
+
+.your-interior_wrapped {
+  h1 {
+    @extend %h1;
+  }
+  p {
+    margin-top: 19px;
+  }
+}
+
+.your-interior_btn {
+  @extend %btn;
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+
+  span {
+    font-size: 18px;
+    color: #ffffff;
+    padding: 22px 21px 22px 34px ;
+    margin-right: 21px;
+  }
+
+  img {
+    padding-right: 20px;
+  }
+  @media (max-width: 430px) {
+    padding: 0;
+  }
+}
+

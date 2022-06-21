@@ -1,0 +1,40 @@
+.section_title--wanna_join {
+  color: #fff;
+
+  h2 {
+    color: #fff;
+  }
+
+}
+
+.wanna_join_wrapped {
+  padding: 95px 0;
+  background: #292F36;
+  border-radius: 70px;
+  button {
+    margin: 31px auto 0;
+    background: #b28b5e;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+
+  @media (max-width: 991px) {
+    padding: 70px 0;
+  }
+
+  @media (max-width: 991px) {
+    padding: 50px 0;
+  }
+
+  @media (max-width: 575px) {
+    padding: 40px 0;
+  }
+}
+
+.wanna_join--btn {
+  @media (max-width: 364px) {
+    padding: 0;
+  }
+}

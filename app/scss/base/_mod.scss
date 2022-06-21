@@ -15,10 +15,15 @@ $size15: 15px;
 $size16: 15px;
 $size18: 18px;
 $size19: 19px;
-$main-font: 22px;
+$size20: 20px;
+$main-size: 22px;
 $size25: 25px;
+$size30: 30px;
 $size35: 35px;
+$size40: 40px;
+$size50: 50px;
 $size75: 75px;
+$size80: 80px;
 
 //--------------------------------------------------------------
 //Colors
@@ -40,33 +45,39 @@ $sea: #235660;
 %h1 {
   font-family: 'DM Serif Display';
   font-style: normal;
-  font-weight: 500;
-  font-size: $size75;
+  font-weight: 700;
+  font-size: $size80;
   line-height: 1.13;
-  color: $white;
+  color: $black;
 
   @media (max-width: 1200px) {
-    font-size: 45px;
+    font-size: 50px;
   }
   @media (max-width: 850px) {
-    font-size: 35px;
+    font-size: 40px;
   }
   @media (max-width: 600px) {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 
 %h2 {
   font-family: 'DM Serif Display';
   font-style: normal;
-  font-weight: 500;
-  font-size: $size35;
+  font-weight: 700;
+  font-size: $size50;
   line-height: 1.35;
   color: $black;
 
   @media (max-width: 850px) {
+    font-size: $size30;
+  }
+
+  @media (max-width: 600px) {
     font-size: $size25;
   }
+
+
 }
 
 %h3 {
@@ -79,6 +90,10 @@ $sea: #235660;
 
   @media (max-width: 850px) {
     font-size: $size18;
+  }
+
+  @media (max-width: 600px) {
+    font-size: $size15;
   }
 }
 
@@ -157,17 +172,17 @@ $sea: #235660;
 //Extends class
 //--------------------------------------------------------------
 
-.btn {
-  @extend %medium-bold;
+%btn {
+
   display: inline-block;
 
   min-width: 138px;
-  padding: 14px 35px;
 
-  color: $white;
-  background: $green;
 
-  border-radius: 5px;
+  background: #292F36;
+  border: 0;
+  border-radius: 18px;
+  cursor: pointer;
 
   transition: all .2s;
 
@@ -176,8 +191,15 @@ $sea: #235660;
     padding: 14px 15px;
   }
 
+  span {
+    font-size: 18px;
+    color: #ffffff;
+    padding: 22px 21px 22px 34px ;
+    margin-right: 21px;
+  }
+
   &:hover {
-    background: $sea;
+    background: #a26546;
     transition: all .2s;
   }
 }

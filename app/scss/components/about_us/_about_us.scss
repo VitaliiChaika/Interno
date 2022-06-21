@@ -1,0 +1,133 @@
+.about_us {
+  padding: 138px 0 111px 0;
+
+  @media (max-width: 1200px) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: 900px) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: 575px) {
+    padding: 40px 0;
+  }
+}
+
+.about-us_wrapped {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  @media (max-width: 900px) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 691px) {
+    justify-content: center;
+  }
+}
+
+.about-us_inner {
+  max-width: 326px;
+
+  p {
+    margin-top: 10px;
+  }
+
+  @media (max-width: 575px) {
+    width: 100%;
+  }
+}
+
+.about-us_social {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+
+  :hover {
+    transform: scale(1.25);
+    transition: all .1s;
+  }
+  img {
+    margin-right: 40px;
+  }
+}
+
+.about-us_item {
+  max-width: 326px;
+  width: 25%;
+  &:first-child {
+    margin-right: 80px;
+
+    @media (max-width: 1020px) {
+      margin-right: 50px;
+    }
+
+    @media (max-width: 900px) {
+    margin-right: 10px;
+    }
+
+    @media (max-width: 691px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &:last-child {
+    @media (max-width: 1200px) {
+      max-width: 190px;
+    }
+
+    @media (max-width: 900px) {
+      max-width: 326px;
+    }
+
+    @media (max-width: 691px) {
+      margin-top: 10px;
+    }
+  }
+
+  li {
+    margin-top: 20px;
+
+    a {
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        display: block;
+        height: 2px;
+        width: 0;
+        transform: translate3d(-50%, -50%, 0);
+        background: #CDA274;
+        pointer-events: none;
+        transition: all .2s;
+      }
+
+      &:hover:after {
+        width: 100%;
+        transition: all .6s;
+      }
+    }
+  }
+
+  a {
+    color: #292F36;
+  }
+
+  @media (max-width: 991px) {
+    width: 50%;
+  }
+}
+
+.about-us_title {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.about-us_tel {
+  font-style: italic;
+}
